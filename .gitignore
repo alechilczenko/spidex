@@ -1,0 +1,6 @@
+__pycache__
+.vscode/
+geoip2/
+ranges/countries/
+scanner/__init__.py
+webtech/
