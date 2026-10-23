@@ -51,10 +51,12 @@ The system is divided into the **Engine (Scanner)** and the **API (Persistence)*
 
 ### Concurrency Examples (CLI)
 
+Run these commands from the repository's `engine/` directory so `engine.py` and its relative database paths resolve.
+
 |**Scenario**|**Command Example**|**Description**|
 |---|---|---|
 |**Rapid Scan**|`python3 engine.py -r 192.168.0.0,192.168.0.255 -t 150 --top-ports`|Scans a range using 150 threads.|
-|**Custom CIDR**|`python3 engine.py -r 192.168.0.0/24 -t 350 -C 80 443 21`|Scans specific ports using 350 threads.|
+|**Custom CIDR**|`python3 engine.py -r 192.168.0.0/24 -t 350 -c 80 443 21`|Scans specific ports using 350 threads.|
 ## 5. Contact & Legal
 
 - **Deployment:** The project is fully containerized with Docker.
